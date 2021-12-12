@@ -10,16 +10,19 @@
 
 <body>
 			<h1></h1>
-				<a href="https://web-free.vercel.app/">Ir ahora</a>
+				<a href="https://web-free.vercel.app/">Nel prro, yo no espero el tiempo es oro</a>
 				<script type="text/javascript" charset="utf-8">
-					let contador = 8,
+					let contador = 10,
 						$message = document.querySelector("h1");
+						
 					setInterval(() => {
 						$message.innerHTML = `Redigiend0 a la pagina web de los cursos en ${contador}`;
 	
 						contador--
 						if (contador <= 0) {
-							window.location.href = "https://web-free.vercel.app/";
+							let link = document.createElement("a");
+							link.href="https://web-free.vercel.app/"
+							link.click()
 						}
 					}, 1000)
 				</script>
