@@ -2,30 +2,48 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="css/index.css" type="text/css" media="all" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="css/index.css" type="text/css" media="all" />
 </head>
 
 <body>
-			<h1></h1>
-				<a href="https://web-free.vercel.app/">Nel prro, yo no espero el tiempo es oro</a>
-				<script type="text/javascript" charset="utf-8">
-					let contador = 10,
-						$message = document.querySelector("h1");
-						
-					setInterval(() => {
-						$message.innerHTML = `Redigiend0 a la pagina web de los cursos en ${contador}`;
-	
-						contador--
-						if (contador <= 0) {
-							let link = document.createElement("a");
-							link.href="https://web-free.vercel.app/"
-							link.click()
-						}
-					}, 1000)
-				</script>
+	<h1>
+		Enviando a un curso ramdon en <span class="counter">10</span>
+	</h1>
+	<div class="links">
+		<a class="linkRamdon">Ir ahora a un curso random</a>
+		<a class="linkHome" href="https://web-free.vercel.app/">Ir ahora al inicio</a>
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		function generateRandomInt(max) {
+			return Math.floor(Math.random() * max);
+		}
+
+		let contador = 18,
+			$counter = document.querySelector(".counter"),
+			intCursos = 27,
+			idRamdon = generateRandomInt(intCursos);
+
+		if (idRamdon <= 0 ) {
+			idRamdon = 01;
+		} else if( idRamdon <= 9) {
+			idRamdon = `0${idRamdon}`;
+		}
+		
+		document.querySelector(".linkRamdon").href = `https://web-free.vercel.app/course/?id=c_${idRamdon}`;
+		setInterval(() => {
+			$counter.innerHTML = contador;
+
+			contador--
+			if (contador <= 0) {
+				let link = document.createElement("a");
+				link.href = `https://web-free.vercel.app/course/?id=c_${idRamdon}`
+				link.click()
+			}
+		}, 1000)
+	</script>
 </body>
 
 </html>

@@ -7,11 +7,15 @@ body{
 	text-align: center;
 }
 a{
-	background: #573383;
 	color: #fff;
 	padding: .7rem 1rem;
 	border-radius: .4rem;
 	text-decoration: none;
 	cursor: pointer;
-	
+}
+.linkRamdon{
+	background: #418DF3;
+}
+.linkHome{
+	background: #4EAC94;
 }
