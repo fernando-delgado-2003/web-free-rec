@@ -5,12 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="all" />
 </head>
 
 <body>
-	<script type="text/javascript" charset="utf-8">
-		window.location.href = "https://web-free.vercel.app/";
-	</script>
+			<h1></h1>
+				<a href="https://web-free.vercel.app/">Ir ahora</a>
+				<script type="text/javascript" charset="utf-8">
+					let contador = 6,
+						$message = document.querySelector("h1");
+	
+					setInterval(() => {
+						$message.innerHTML = `Redigiend0 a la pagina web de los cursos en ${contador}`;
+	
+						contador--
+						if (contador <= 0) {
+							window.location.href = "https://web-free.vercel.app/";
+						}
+					}, 1000)
+				</script>
 </body>
 
 </html>
