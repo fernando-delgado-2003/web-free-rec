@@ -4,7 +4,7 @@ function generateRandomInt(max) {
 
 let contador = 25,
 	$counter = document.querySelector(".counter"),
-	intCursos = 31,
+	intCursos = 34,
 	idRamdon = generateRandomInt(intCursos),
 	linkHref,
 	templateLinks;
