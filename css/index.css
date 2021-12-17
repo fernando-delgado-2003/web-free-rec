@@ -13,7 +13,15 @@ a{
 	text-decoration: none;
 	cursor: pointer;
 }
-.linkRamdon{
+h1{
+	margin: 1rem 0;
+	
+}
+p{
+	margin: .5rem 0 1.5rem 0;
+	color: #424242
+}
+.link{
 	background: #418DF3;
 }
 .linkHome{

@@ -13,38 +13,10 @@
 		Enviando a un curso ramdon en <span class="counter">25</span>
 		o puedes ir ahora con los links de abajo
 	</h1>
-	<div class="links">
-		<a class="linkRamdon">Ir ahora a un curso random</a>
+	<div class="links" id="index">
 		<a class="linkHome" href="https://web-free.vercel.app/">Ir ahora al inicio</a>
 	</div>
-	<script type="text/javascript" charset="utf-8">
-		function generateRandomInt(max) {
-			return Math.floor(Math.random() * max);
-		}
-
-		let contador = 25,
-			$counter = document.querySelector(".counter"),
-			intCursos = 27,
-			idRamdon = generateRandomInt(intCursos);
-
-		if (idRamdon <= 0 ) {
-			idRamdon = 01;
-		} else if( idRamdon <= 9) {
-			idRamdon = `0${idRamdon}`;
-		}
-		
-		document.querySelector(".linkRamdon").href = `https://web-free.vercel.app/course/?id=c_${idRamdon}`;
-		setInterval(() => {
-			$counter.innerHTML = contador;
-
-			contador--
-			if (contador <= 0) {
-				let link = document.createElement("a");
-				link.href = `https://web-free.vercel.app/course/?id=c_${idRamdon}`
-				link.click()
-			}
-		}, 1000)
-	</script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
