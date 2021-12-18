@@ -19,7 +19,7 @@ if (document.getElementById("index")) {
 	linkHref = `https://web-free.vercel.app/course/?id=c_${idRamdon}`;
 	templateLinks = `
 			<a class="link" href="${linkHref}">Curso ramdon</a>
-			<a class="linkHome" href="https://web-free.vercel.app/">Ir ahora al inicio</a>
+			<a class="linkHome" href="https://web-free.vercel.app/">Todos cursos</a>
 	`;
 } else {
 	let title = document.querySelector("h1");
